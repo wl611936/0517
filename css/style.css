@@ -1,0 +1,93 @@
+:root{
+  --blk: #333;
+  --pry: #3c9;
+  --sec: #ffc;
+  --wht: #fff;
+}
+.border{
+  border: .1rem solid var(--blk);
+}
+.btn{
+  background-color: var(--wht);
+  border: .1rem solid var(--blk);
+  border-radius: .2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: .2s;
+}
+.btn:hover{
+  background-color: var(--pry);
+  color: var(--wht);
+}
+.container{
+  background: none;
+  background-color: var(--sec);
+  margin-top: 4rem;
+  min-height: calc(100vh - 8rem);
+  padding: 1rem;
+  width: 100%;
+}
+.content{
+  background-color: var(--wht);
+  border: .1rem solid var(--blk);
+  border-top: none;
+  padding: 1rem;
+  width: 100%;
+}
+.footer{
+  background-color: var(--pry);
+  border-top: .2rem double var(--wht);
+  height: 4rem;
+  width: 100%;
+}
+.hr{
+  background-color: var(--blk);
+  height: .05rem;
+  margin: calc(calc(1rem - .05rem) / 2) auto;
+  width: 100%;
+}
+.logo{
+  color: var(--wht);
+  font-family: "Architects Daughter";
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  text-shadow: .1rem .1rem .4rem var(--blk);
+}
+.main{
+  background-color: var(--sec);
+  border: .1rem solid var(--blk);
+  border-radius: .2rem;
+  min-height: calc(100vh - 10rem);
+  padding: 1rem;
+  width: 100%;
+}
+.nav{
+  background-color: var(--pry);
+  box-shadow: 0 0 .4rem var(--blk);
+  height: 4rem;
+  left: 0;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.title{
+  background-color: var(--blk);
+  border-bottom: .1rem solid var(--blk);
+  color: var(--wht);
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+@media (min-width: 720px){
+  .container{
+    background: url("../img/pattern.svg") fixed;
+  }
+  .main{
+    border: .1rem solid var(--blk);
+    margin: auto;
+    width: calc(720px - 4rem);
+  }
+}

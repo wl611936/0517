@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Microsoft Jhenghei";
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  height: auto;
+  /* 當父層沒有設定高度時圖片的邊界會產生間距，此設定可將間距清除。 */
+  vertical-align: top;
+  /* 縮放原圖的寬度，符合父層寬度。 */
+  width: 100%;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul{
+  list-style-type: none;
+}
